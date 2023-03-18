@@ -1,0 +1,70 @@
+{{> menu active="admin-dashboard"}}
+
+<section class="section">
+    <h1 class="title">User List</h1>
+   {{> list-users}}
+  
+</section>
+
+<div class="box box-link-hover-shadow has-background-warning-light">
+    <h2 class="title">
+      Analytics
+    </h2>
+    <table class="table is-fullwidth is-striped has-background-warning-light">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Users
+            </td>
+            <td>
+                {{users.length}}
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                Difficulties
+            </td>
+            <td>
+                {{difficulties.length}}
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                Spots
+            </td>
+            <td>
+               {{spots.length}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Average Difficulties Per User
+            </td>
+            <td>
+                {{results.avgUserDifficulties}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Average Spots Per User
+            </td>
+            <td>
+                {{results.avgUserSpots}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Average Spots Per Difficulty
+            </td>
+            <td>
+                {{results.avgSpotsPerDifficulty}}
+            </td>
+        </tr>     
+    </tbody>
+  </div>
